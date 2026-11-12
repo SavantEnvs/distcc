@@ -1,0 +1,9 @@
+project: savantenvs/distcc
+target: fuzz_parsemask
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_parsemask/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_parsemask
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_parsemask/fuzz_parsemask.dict

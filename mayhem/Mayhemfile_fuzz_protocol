@@ -1,0 +1,9 @@
+project: savantenvs/distcc
+target: fuzz_protocol
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_protocol/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_protocol
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_protocol/fuzz_protocol.dict

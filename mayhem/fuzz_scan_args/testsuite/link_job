@@ -1,0 +1,4 @@
+foo.o
+bar.o
+-o
+prog

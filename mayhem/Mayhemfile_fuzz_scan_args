@@ -1,0 +1,9 @@
+project: savantenvs/distcc
+target: fuzz_scan_args
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_scan_args/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_scan_args
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_scan_args/fuzz_scan_args.dict

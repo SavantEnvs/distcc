@@ -1,0 +1,9 @@
+-DFOO=1
+-I/usr/include
+-isystem
+/opt/inc
+-Wall
+-O2
+-c
+src/foo.c
+-ofoo.o

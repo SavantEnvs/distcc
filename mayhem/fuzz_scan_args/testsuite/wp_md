@@ -1,0 +1,5 @@
+-Wp,-MD,.deps/foo.pp
+-c
+foo.c
+-o
+foo.o

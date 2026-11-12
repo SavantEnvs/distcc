@@ -1,0 +1,9 @@
+-MD
+-MF
+foo.d
+-MT
+foo.o
+-c
+foo.c
+-o
+foo.o

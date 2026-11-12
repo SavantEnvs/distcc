@@ -1,0 +1,5 @@
+gcc
+-c
+foo.c
+-o
+foo.o

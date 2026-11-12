@@ -1,0 +1,6 @@
+-x
+c++
+-c
+foo.cc
+-o
+foo.o
